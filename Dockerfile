@@ -7,4 +7,4 @@ COPY .env ./
 RUN npm install
 COPY . .
 EXPOSE 4040
-CMD [ "npm", "start", "app.js" ]
+CMD [ "npm", "start", "server.js" ]
