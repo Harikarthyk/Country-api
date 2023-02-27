@@ -6,7 +6,7 @@ info:
   version: 1.0.0
   contact:
     email: harikarthyk1407@gmail.com
-    url: https://harikarthyk.xyz
+    url: https://harikarthyk.com
 
 servers:
   - url: http://all-country-api.herokuapp.com/api/{version}
