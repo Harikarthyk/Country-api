@@ -1,10 +1,10 @@
-FROM node:latest
-RUN mkdir -p /root
-WORKDIR /root
-COPY package*.json ./
-RUN touch .env
-COPY .env ./
+FROM node:alpine
+
+WORKDIR /app
+COPY package.json .
 RUN npm install
 COPY . .
+
 EXPOSE 4040
-CMD [ "npm", "start", "server.js" ]
+
+CMD ["npm", "start"]
